@@ -260,7 +260,7 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: rgb(169, 226, 90);
 }
 
 #hero p {
@@ -271,7 +271,7 @@ h6 {
 }
 
 #hero p span {
-  color: #fff;
+  color: rgb(169, 226, 90);
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -1109,7 +1109,7 @@ section {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: circle;
   padding: 0;
 }
 
@@ -1131,4 +1131,20 @@ li {
 .col-lg-6:hover {
   transform: translateY(-4px);
   transition: transform 0.3s ease;
+}
+
+bod {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(169, 226, 90);
+  text-align: center;
+}
+
+#calendar{
+  margin: 20px;
+  font-size: 20px;
+}
+
+#clock{
+  margin: 20px;
+  font-size: 20px;
 }
