@@ -260,3 +260,19 @@
   new PureCounter();
 
 })()
+
+function updateDateTime(){
+  const currentDateElement = document.getElementById('currentDate');
+  const currentTimeElement = document.getElementById('currentTime');
+
+  const now = new Date();
+
+  const options = {weekday:'long',year:'numeric',month:'long',day:'numeric'};
+  const formattedDate = now.toLocaleDateString('en-US',options);
+  const formattedTime = now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+
+  currentDateElement.textContent = formattedDate;
+  currentTimeElement.textContent = formattedTime;
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
