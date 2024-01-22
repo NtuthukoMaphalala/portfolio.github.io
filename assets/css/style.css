@@ -1,10 +1,11 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  transition: background-color 0.3s ease;
+  background-color: white;
 }
 
 a {
@@ -260,7 +261,7 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: rgb(169, 226, 90);
+  color: #fff;
 }
 
 #hero p {
@@ -271,7 +272,7 @@ h6 {
 }
 
 #hero p span {
-  color: rgb(169, 226, 90);
+  color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -423,7 +424,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# Akills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -467,7 +468,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #455161;
 }
 
 .resume .resume-item {
@@ -483,13 +484,13 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #365669;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #66696e;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -765,7 +766,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #2c4055;
 }
 
 .testimonials .testimonial-item h4 {
@@ -797,7 +798,8 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  color: black;
+  background: #ffffffa7;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -842,7 +844,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #ffffffa7;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -914,7 +916,8 @@ section {
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  color: black;
+  background: #ffffffa7;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1098,53 +1101,36 @@ section {
   }
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-
-.col-lg-6 {
-  width: 48%; 
-}
-
-ul {
-  list-style-type: circle;
-  padding: 0;
-}
-
-h3 {
-  color: #333; 
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-.col-lg-6 {
-  background-color: #f8f8f8; 
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.col-lg-6:hover {
-  transform: translateY(-4px);
-  transition: transform 0.3s ease;
-}
-
-bod {
+date-time {
   font-family: "Open Sans", sans-serif;
-  color: rgb(169, 226, 90);
+  color: white;
   text-align: center;
 }
 
 #calendar{
-  margin: 20px;
-  font-size: 20px;
+  margin: 25px;
+  font-size: 25px;
 }
 
 #clock{
+  margin: 25px;
+  font-size: 25px;
+}
+.dark-theme {
+  background-color: #222;
+  color: #ffffffb2;
+}
+.theme-switch-container {
+  text-align: center;
   margin: 20px;
-  font-size: 20px;
+}
+#theme-switch-btn {
+  padding: 10px 14px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #66696e;
+}
+.resume-downloader-container {
+  text-align: center;
+  margin: 20px;
 }
