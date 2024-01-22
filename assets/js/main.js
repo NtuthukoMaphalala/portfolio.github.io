@@ -276,3 +276,10 @@ function updateDateTime(){
 }
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+const themeSwitchBtn = document.getElementById('theme-switch-btn');
+const body = document.body;
+
+themeSwitchBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+});
