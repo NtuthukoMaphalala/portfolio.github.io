@@ -30,6 +30,30 @@
 </head>
 
 <body>
+   <div id="map"></div> <!-- The map will be rendered in this div -->
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of your desired place (e.g., Sydney, Australia)
+            const location = { lat: -34.397, lng: 150.644 };
+
+            // The map, centered at the specified location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 8,
+                center: location,
+            });
+
+            // The marker, positioned at the specified location
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+
+    <!-- Load the Google Maps API script with your API key -->
+    <script async defer src="https://www.google.com/maps?q=-29.546390730557373,30.42254048189468"></script>
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
