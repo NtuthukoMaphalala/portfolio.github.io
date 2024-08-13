@@ -811,4 +811,44 @@
 
 </body>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.php-email-form');
+    const loading = document.querySelector('.loading');
+    const errorMessage = document.querySelector('.error-message');
+    const sentMessage = document.querySelector('.sent-message');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      loading.style.display = 'block';
+      errorMessage.style.display = 'none';
+      sentMessage.style.display = 'none';
+
+      const formData = new FormData(form);
+
+      fetch('forms/contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        loading.style.display = 'none';
+        if (data.success) {
+          sentMessage.style.display = 'block';
+          form.reset();
+        } else {
+          errorMessage.style.display = 'block';
+          errorMessage.textContent = data.message;
+        }
+      })
+      .catch(() => {
+        loading.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = 'An error occurred while sending your message. Please try again later.';
+      });
+    });
+  });
+</script>
+  
 </html>
