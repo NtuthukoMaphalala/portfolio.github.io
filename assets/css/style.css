@@ -1,14 +1,4 @@
-Here are some improvements to your CSS:
 
-1. **Consistent and Optimized Naming**: Use consistent naming conventions and organize sections clearly.
-2. **Responsive Design**: Improve media queries for better responsiveness.
-3. **Optimized Selectors**: Use more specific and optimized selectors to reduce conflicts and improve performance.
-4. **Reduced Redundancy**: Remove redundant styles and properties.
-5. **Enhanced Readability**: Add comments and format the code for better readability.
-
-Here is the improved CSS:
-
-```css
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -408,3 +398,183 @@ section {
   border-radius: 0;
 }
 
+
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.progress-bar-wrap {
+  background: #d1e8ff;
+}
+
+.progress-bar {
+  width: 1px;
+  height: 20px;
+  transition: .9s;
+}
+
+.progress-bar-html {
+  background: #149ddd;
+}
+
+.progress-bar-css {
+  background: #e34c26;
+}
+
+.progress-bar-js {
+  background: #f7df1e;
+}
+
+.progress-bar-php {
+  background: #787cb5;
+}
+
+.progress-bar-wordpress {
+  background: #21759b;
+}
+
+.progress-bar-photoshop {
+  background: #001e36;
+}
+
+.progress-bar-figma {
+  background: #a259ff;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 30px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #050d18;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #e9f1f6;
+}
+
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  background: #149ddd;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #050d18;
+  background: #f7fcff;
+  padding: 30px;
+  width: 100%;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d1e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 10px 58px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 28px;
+  font-size: 14px;
+  margin: 0 0 0 58px;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact .form-group {
+  margin-bottom: 25px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #149ddd;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: #f5c6cb;
+  color: #721c24;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #37b3ed;
+}
