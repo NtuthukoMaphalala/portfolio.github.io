@@ -30,77 +30,6 @@
 </head>
 
 <body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .weather-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        #weather-icon {
-            width: 100px;
-            height: 100px;
-        }
-    </style>
-</head>
-
-    <div class="weather-container">
-        <h2>Weather in <span id="city">Loading...</span></h2>
-        <img id="weather-icon" src="" alt="Weather icon">
-        <p>Temperature: <span id="temperature">--</span>°C</p>
-        <p>Description: <span id="description">--</span></p>
-    </div>
-
-    <script>
-        const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
-        const city = 'Pietermaritzburg'; // You can change this to any city
-
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('city').textContent = data.name;
-                document.getElementById('temperature').textContent = Math.round(data.main.temp);
-                document.getElementById('description').textContent = data.weather[0].description;
-                document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-            })
-            .catch(error => console.error('Error:', error));
-    </script>
-
- <!-- Add the mobile nav toggle button -->
-  <button class="mobile-nav-toggle d-xl-none">
-    <i class="bi bi-list"></i>
-  </button>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <!-- Profile content remains unchanged -->
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <!-- Navigation menu items remain unchanged -->
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
    <!--div id="map"></div> <!-- The map will be rendered in this div ->
 
     <script>
@@ -878,18 +807,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-      const navbar = document.querySelector('#navbar');
 
-      mobileNavToggle.addEventListener('click', function() {
-        navbar.classList.toggle('navbar-mobile');
-        this.classList.toggle('bi-list');
-        this.classList.toggle('bi-x');
-      });
-    });
-  </script>
 </body>
   
 </html>
