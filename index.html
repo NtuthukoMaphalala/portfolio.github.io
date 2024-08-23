@@ -96,6 +96,36 @@
         </ul>
     
       </nav><!-- .nav-menu -->
+      <div id="weather-app" class="weather-container">
+    <div class="weather-info">
+        <p id="location">Loading...</p>
+        <p id="temperature"></p>
+        <p id="description"></p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const apiKey = "your_api_key";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=Pietermaritzburg&units=metric&appid=" + apiKey;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const location = data.name;
+                const temperature = data.main.temp;
+                const description = data.weather[0].description;
+
+                document.getElementById("location").textContent = location;
+                document.getElementById("temperature").textContent = `${temperature}°C`;
+                document.getElementById("description").textContent = description.charAt(0).toUpperCase() + description.slice(1);
+            })
+            .catch(error => {
+                document.getElementById("location").textContent = "Unable to retrieve weather data.";
+                console.error("Error fetching weather data:", error);
+            });
+    });
+</script>
     </div>
 
   </header><!-- End Header -->
