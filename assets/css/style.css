@@ -1,6 +1,36 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.mobile-menu-icon {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Menu bars */
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #fff; /* Change as needed */
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Show mobile menu icon on smaller screens */
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: flex; /* Show on mobile */
+  }
+  #navbar {
+    display: none; /* Hide navbar initially */
+    flex-direction: column;
+  }
+  #navbar.active {
+    display: flex; /* Show when active */
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
