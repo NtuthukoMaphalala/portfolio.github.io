@@ -254,6 +254,11 @@
 
 })()
 
+  function toggleNavbar() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+  }
+
 function updateDateTime(){
   const currentDateElement = document.getElementById('currentDate');
   const currentTimeElement = document.getElementById('currentTime');
