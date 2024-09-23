@@ -53,6 +53,13 @@
           <a href="https://www.linkedin.com/in/ntuthukomaphalala" target="_blank">
             <i class="bx bxl-linkedin"></i>
           </a>
+          <div class="mobile-menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
         </div>
       </div>
 
@@ -726,5 +733,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      var navbar = document.getElementById("navbar");
+      var menuIcon = document.querySelector(".mobile-menu-icon");
+      navbar.classList.toggle("active");
+      menuIcon.classList.toggle("change");
+    }
+  </script>
 </body>
 </html>
