@@ -785,7 +785,25 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script><script>
+    function toggleMenu() {
+      var navbar = document.getElementById("navbar");
+      var menuIcon = document.querySelector(".mobile-menu-icon");
+      navbar.classList.toggle("active");
+      menuIcon.classList.toggle("change");
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      var navbar = document.getElementById("navbar");
+      var menuIcon = document.querySelector(".mobile-menu-icon");
+      var isClickInside = navbar.contains(event.target) || menuIcon.contains(event.target);
+
+      if (!isClickInside && navbar.classList.contains('active')) {
+        navbar.classList.remove('active');
+        menuIcon.classList.remove('change');
+      }
+    });
+  </script>
 </body>
 </html>
