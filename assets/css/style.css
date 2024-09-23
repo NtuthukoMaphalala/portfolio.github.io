@@ -74,30 +74,6 @@ h6 {
       transition: 0.4s;
     }
 
-    /* Show mobile menu icon on smaller screens */
-    @media (max-width: 991px) {
-      .mobile-menu-icon {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        z-index: 9999;
-      }
-
-      #navbar {
-        display: none;
-      }
-
-      #navbar.active {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 70px;
-        background: rgba(0, 0, 0, 0.8);
-        padding: 10px;
-      }
-    }
-
     /* Animation for menu icon */
     .change .bar1 {
       transform: translate(0, 9px) rotate(-45deg);
