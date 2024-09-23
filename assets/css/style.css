@@ -98,6 +98,33 @@ h6 {
             cursor: pointer;
             border-radius: 4px;
         }
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white; /* Adjust color as needed */
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+  
+  .nav-menu {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    position: absolute;
+    background-color: #333; /* Background color of the dropdown */
+    top: 60px; /* Position below header */
+    left: 0;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show menu when active */
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
