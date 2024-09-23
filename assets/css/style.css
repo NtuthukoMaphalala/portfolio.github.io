@@ -879,6 +879,17 @@ section {
 .contact {
   padding-bottom: 130px;
 }
+.form-group {
+  margin-bottom: 15px; /* Adjust spacing between input fields */
+}
+
+.form-control {
+  padding: 10px; /* Adjust padding for better touch targets */
+}
+
+.text-center {
+  margin-top: 15px; /* Add margin above the submit button */
+}
 
 .contact .info {
   padding: 30px;
