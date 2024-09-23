@@ -84,6 +84,20 @@ h6 {
     .change .bar3 {
       transform: translate(0, -9px) rotate(45deg);
     }
+
+.hire-me {
+            background-color: #D3D3D3;
+            border: none;
+            color: black;
+            padding: 13px 29px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
