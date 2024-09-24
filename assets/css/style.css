@@ -322,6 +322,7 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -335,7 +336,10 @@ h6 {
   padding: 0;
   list-style: none;
 }
-
+.nav-menu > ul {
+  display: flex; /* Change to flex for both layouts */
+  flex-direction: column; /* Default to vertical */
+}
 .nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
