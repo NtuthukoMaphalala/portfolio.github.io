@@ -30,8 +30,13 @@
 </head>
 
 <body>
-<!-- ======= Mobile nav toggle button ======= -->
-  <!--i class="bi bi-list mobile-nav-toggle d-xl-none"></i-->
+
+    <!-- Mobile menu button (3 stripes) -->
+    <div class="mobile-menu-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 
     <!-- ======= Header ======= -->
     <header id="header">
@@ -723,26 +728,5 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script><script>
-    function toggleMenu() {
-      var navbar = document.getElementById("navbar");
-      var menuIcon = document.querySelector(".mobile-menu-icon");
-      navbar.classList.toggle("active");
-      menuIcon.classList.toggle("change");
-    }
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      var navbar = document.getElementById("navbar");
-      var menuIcon = document.querySelector(".mobile-menu-icon");
-      var isClickInside = navbar.contains(event.target) || menuIcon.contains(event.target);
-
-      if (!isClickInside && navbar.classList.contains('active')) {
-        navbar.classList.remove('active');
-        menuIcon.classList.remove('change');
-      }
-    });
-  </script>
 </body>
 </html>
