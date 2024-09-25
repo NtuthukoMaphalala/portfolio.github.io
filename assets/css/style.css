@@ -1,116 +1,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* Mobile Menu Icon */
-.mobile-menu-icon {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 25px;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mobile-menu-icon div {
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-
-/* Navbar (Hidden by default on mobile) */
-#navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#navbar.active {
-  display: block; /* Show navbar when menu icon is clicked */
-}
-
-.nav-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.nav-menu ul li {
-  padding: 10px 0;
-}
-
-.nav-menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Hide navbar links and mobile menu icon on desktop */
-@media (min-width: 768px) {
-  .mobile-menu-icon {
-    display: none;
-  }
-  
-  #navbar {
-    display: flex; /* Keep showing the navbar on larger screens */
-    flex-direction: row; /* Horizontal alignment on desktop */
-  }
-
-  #navbar ul {
-    display: flex;
-  }
-
-  #navbar ul li {
-    padding: 0 15px;
-  }
-}
-
-/* Display the mobile menu icon on smaller screens */
-@media (max-width: 767px) {
-  .mobile-menu-icon {
-    display: flex;
-    justify-content: center;
-    margin: 15px 0;
-  }
-  
-  #navbar {
-    display: none; /* Hide the navbar initially */
-    flex-direction: column;
-    background-color: #333;
-    padding: 20px;
-  }
-  
-  #navbar.active {
-    display: flex; /* Display navbar on click */
-  }
-
-  .nav-menu ul li {
-    padding: 10px;
-    border-bottom: 1px solid #444;
-  }
-
-  .nav-menu ul li a {
-    font-size: 18px;
-    color: #fff;
-    display: block;
-    width: 100%;
-  }
-}
-
-/* Animating the menu bars for a hamburger to X transformation */
-.mobile-menu-icon.active .bar1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.mobile-menu-icon.active .bar2 {
-  opacity: 0;
-}
-
-.mobile-menu-icon.active .bar3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -168,71 +58,6 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
-}
-    /* Mobile menu icon styles */
-    .mobile-menu-icon {
-      display: none;
-      cursor: pointer;
-      padding: 10px;
-    }
-
-    .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 3px;
-      background-color: #fff;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-
-    /* Animation for menu icon */
-    .change .bar1 {
-      transform: translate(0, 9px) rotate(-45deg);
-    }
-
-    .change .bar2 {opacity: 0;}
-
-    .change .bar3 {
-      transform: translate(0, -9px) rotate(45deg);
-    }
-
-.hire-me {
-            background-color: #D3D3D3;
-            border: none;
-            color: black;
-            padding: 13px 29px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-.navbar-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: white; /* Adjust color as needed */
-}
-
-@media (max-width: 768px) {
-  .navbar-toggle {
-    display: block; /* Show toggle button on mobile */
-  }
-  
-  .nav-menu {
-    display: none; /* Hide menu by default on mobile */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%;
-    position: absolute;
-    background-color: #333; /* Background color of the dropdown */
-    top: 60px; /* Position below header */
-    left: 0;
-  }
-
-  .nav-menu.active {
-    display: flex; /* Show menu when active */
-  }
 }
 
 /*--------------------------------------------------------------
@@ -322,7 +147,6 @@ h6 {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -336,10 +160,7 @@ h6 {
   padding: 0;
   list-style: none;
 }
-.nav-menu > ul {
-  display: flex; /* Change to flex for both layouts */
-  flex-direction: column; /* Default to vertical */
-}
+
 .nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
@@ -1020,17 +841,6 @@ section {
 .contact {
   padding-bottom: 130px;
 }
-.form-group {
-  margin-bottom: 15px; /* Adjust spacing between input fields */
-}
-
-.form-control {
-  padding: 10px; /* Adjust padding for better touch targets */
-}
-
-.text-center {
-  margin-top: 15px; /* Add margin above the submit button */
-}
 
 .contact .info {
   padding: 30px;
@@ -1210,58 +1020,6 @@ section {
   }
 }
 
-/* General form styling */
-form {
-  background-color: #f8f9fa; /* Light background for contrast */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Padding around the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Spacing between form groups */
-.form-group {
-  margin-bottom: 15px; /* Space between form fields */
-}
-
-/* Styling for input and textarea */
-.form-control {
-  width: 100%; /* Full width */
-  padding: 10px; /* Padding inside the fields */
-  border: 1px solid #ced4da; /* Border color */
-  border-radius: 5px; /* Rounded borders */
-  transition: border-color 0.3s ease; /* Transition effect for border color */
-}
-
-/* Focus effect */
-.form-control:focus {
-  border-color: #80bdff; /* Change border color on focus */
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5); /* Soft glow effect */
-}
-
-/* Button styling */
-button {
-  background-color: #007bff; /* Primary button color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  padding: 10px 20px; /* Padding around the button */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s ease; /* Transition for background color */
-}
-
-/* Button hover effect */
-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
-
-/* Error message styling */
-.error-message {
-  color: red; /* Red color for errors */
-  font-size: 14px; /* Font size for error messages */
-  margin-top: 10px; /* Space above error messages */
-}
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1376,3 +1134,50 @@ date-time {
   text-align: center;
   margin: 20px;
 }
+
+/*Adds*/
+
+/* General form styling */
+form {
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding around the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Spacing between form groups */
+.form-group {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Styling for input and textarea */
+.form-control {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the fields */
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 5px; /* Rounded borders */
+  transition: border-color 0.3s ease; /* Transition effect for border color */
+}
+
+/* Focus effect */
+.form-control:focus {
+  border-color: #80bdff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5); /* Soft glow effect */
+}
+
+/* Button styling */
+button {
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
