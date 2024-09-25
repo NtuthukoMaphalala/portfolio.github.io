@@ -281,27 +281,3 @@ const body = document.body;
 themeSwitchBtn.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
 });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    function toggleMenu() {
-      var navbar = document.getElementById("navbar");
-      var menuIcon = document.querySelector(".mobile-menu-icon");
-      navbar.classList.toggle("active");
-      menuIcon.classList.toggle("change");
-    }
-
-    // Add event listener for the menu toggle
-    var menuIcon = document.querySelector(".mobile-menu-icon");
-    menuIcon.addEventListener('click', toggleMenu);
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      var navbar = document.getElementById("navbar");
-      var isClickInside = navbar.contains(event.target) || menuIcon.contains(event.target);
-
-      if (!isClickInside && navbar.classList.contains('active')) {
-        navbar.classList.remove('active');
-        menuIcon.classList.remove('change');
-      }
-    });
-  });
