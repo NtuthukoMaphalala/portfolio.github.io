@@ -235,7 +235,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg.jpg") top right;
   background-size: cover;
 }
 
@@ -1179,5 +1179,22 @@ button {
 /* Button hover effect */
 button:hover {
   background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+body, html {
+    height: 10%;
+    margin: 0;
+    display:block;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+#weather-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional for better visibility */
+    border: 1px solid #ccc; /* Optional for a light border */
+    border-radius: 5px; /* Optional for rounded corners */
+    text-align: center; /* Centers text inside the container */
 }
 
