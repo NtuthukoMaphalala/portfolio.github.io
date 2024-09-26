@@ -281,3 +281,49 @@ const body = document.body;
 themeSwitchBtn.addEventListener("click", () => {
   body.classList.toggle("dark-theme");
 });
+
+
+
+        const apiKey = '07bf5d50456b5181632845cd6b13ad91';
+
+        function showError(message) {
+            const errorElement = document.getElementById('error-message');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        async function getWeatherByCoords(lat, lon) {
+            try {
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
+                const data = await response.json();
+
+                document.getElementById('location').textContent = data.name;
+                document.getElementById('temperature').textContent = `${Math.round(data.main.temp)}°C`;
+                document.getElementById('description').textContent = data.weather[0].description;
+                document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+                showError('Failed to fetch weather data. Please try again later.');
+            }
+        }
+
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const lat = position.coords.latitude;
+                        const lon = position.coords.longitude;
+                        getWeatherByCoords(lat, lon);
+                    },
+                    (error) => {
+                        console.error('Error getting user location:', error);
+                        showError('Unable to get your location. Please enable location services and refresh the page.');
+                    }
+                );
+            } else {
+                showError('Geolocation is not supported by your browser.');
+            }
+        }
+
+        getUserLocation();
+    
