@@ -375,119 +375,129 @@
     <!--/section><-- End Resume Section -->
 
     <!-- ======= Projects Section ======= -->
-    <!--section id="resume" class="resume">
+    <section id="resume" class="resume">
       <div class="container">
-
         <div class="section-title">
-
-          <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-title"-->
-          <h2><i class="bi bi-list">Azure Projects</h2></i>
-
-          <p><i class="bi bi-arrow-down-short"> Following are the Azure projects I have successfully completed, 
-            showcasing a diverse range of skills and accomplishments.</i></p>
+              <h2>Azure Projects</h2>
+          <p><i class="bi bi-arrow-down-short"></i> Here are the Azure projects I have successfully completed, highlighting my skills and achievements.</p>
         </div>
-        
         <div class="row">
-            <div class="col-lg-6">
-                <ul>
-                  <h4><strong>1. Deployment Azure Protected Geo-Redundant Solution Having Path Based Routing.</strong></h4>
-                    <ul>
-                    <h4><i class="bi bi-people ">Project Overview</h4></i>
-                    <li><strong>Login to Azure Portal:</strong> The project commenced with accessing the Azure Portal, utilizing secure authentication methods to ensure a protected environment for the configuration and deployment processes.</li>
-                    <li><strong>Designing Load Balancing Architecture:</strong> The load balancing architecture was meticulously crafted to ensure optimal performance and reliability.</li>
-                    <li><strong>Geographic Redundancy:</strong> To address the global user base, the design incorporated geographic redundancy.</li>
-                    <li><strong>Traﬀic Manager Configuration:</strong> The Traﬀic Manager, a vital component of the global distribution strategy, was configured to intelligently route traﬀic to the closest available endpoint.</li>
-                  </ul>
-                </ul>
+    
+          <!-- Project 1 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>1. Azure Geo-Redundant Solution with Path-Based Routing</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>Login to Azure Portal:</strong> Accessed the portal using secure methods.</li>
+                <li><strong>Load Balancing Architecture:</strong> Designed for optimal performance.</li>
+                <li><strong>Geographic Redundancy:</strong> Implemented for global user access.</li>
+                <li><strong>Traffic Manager:</strong> Configured to route traffic efficiently.</li>
+              </ul>
             </div>
-
-              <div class="col-lg-6">
-                <ul>
-                  <h4><strong>2. Deploying an Online Movie Watching Application on Cloud.</strong></h4>
-                    <ul>
-                      <h4><i class="bi bi-people ">Project Overview</h4></i>
-                      <li><strong>Define Application Architecture:</strong> Identify and design the architecture of the movie-watching application, including frontend, backend, and database components.</li>
-                      <li><strong>Storage Configuration:</strong> Configure Azure Storage for storing media files and assets.</li>
-                      <li><strong>Frontend & Backend Deployment:</strong> Deploy the backend application using Azure App Service, Azure Kubernetes Service (AKS), or Azure Functions, depending on the architecture. Host the frontend of the application on Azure App Service, Azure Static Web Apps, or Azure CDN.</li>
-                      <li><strong>Security & Authentication:</strong> Implement Azure Active Directory for user authentication and authorization.</li>
-                      <li><strong>Monitoring & Logging:</strong> Set up Azure Monitor and Azure Log Analytics for monitoring application performance and collecting logs.</li>
-                      </ul>
-                </ul>
-              </div>
-
-              <div class="col-lg-6">
-                <ul>
-                  <h4><strong>3. Vehicle Tracking System Setup</strong></h4>
-                    <ul>
-                      <h4><i class="bi bi-people ">Project Overview</h4></i>
-                      <li><strong>Azure IoT Hub Setup:</strong> Create an Azure IoT Hub instance in the Azure portal. Configure security settings and access policies. Register and provision vehicle telematics devices with the IoT Hub.</li>
-                      <li><strong>Device Configuration:</strong> Configure devices to securely connect to the IoT Hub using appropriate authentication mechanisms. Implement device-side logic for collecting and transmitting telemetry data.</li>
-                      <li><strong>Data Routing to Stream Analytics:</strong> Set up data routing rules in the IoT Hub to forward telemetry data to Azure Stream Analytics. Define input and output sources for Stream Analytics jobs. Design and deploy Stream Analytics queries for real-time data processing.</li>
-                      <li><strong>Monitoring and Management:</strong> Implement monitoring and alerting mechanisms for monitoring the health and performance of the system. Set up device management capabilities for remotely managing and configuring devices. Ensure security best practices are followed throughout the system.</li>
-                      </ul>
-                </ul>
-              </div>
-
-              <div class="col-lg-6">
-                <ul>
-                  <h4><strong>4. Fleet Data Analysis and Reporting</strong></h4>
-                    <ul>
-                      <h4><i class="bi bi-people ">Project Overview</h4></i>
-                      <li><strong>Azure Stream Analytics Setup:</strong> Create an Azure Stream Analytics job in the Azure portal. Define inputs to ingest real-time fleet data streams. Configure query logic for processing and transforming incoming data. Specify outputs for delivering processed data to Azure SQL Database.</li>
-                      <li><strong>Azure SQL Database Configurations:</strong> Provision an Azure SQL Database instance in the Azure portal. Set up tables and schemas to store fleet data. Configure firewall rules and access permissions for connecting to the database. Establish a connection from Azure Stream Analytics to Azure SQL Database for data storage.</li>
-                      <li><strong>Azure Functions Development:</strong> Develop Azure Functions for implementing custom data processing logic.
-                        Define functions to perform specific tasks such as data enrichment, validation, or aggregation.
-                        Integrate Azure Functions with Azure Stream Analytics for invoking custom processing tasks.</li>
-                      <li><strong>Reporting and Visualization:</strong> Use reporting tools or frameworks to generate visualizations and reports from the processed fleet data.
-                        Implement dashboards for monitoring key performance indicators (KPIs) and trends.
-                        Integrate reporting components with Azure Functions or other services for automated report generation and distribution.
-                        </li>
-                      </ul>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <h4><strong>5. Fleet Management Application Development with Azure Integration</strong></h4>
-                    <ul>
-                      <h4><i class="bi bi-people ">Project Overview</h4></i>
-                      <li><strong>Web Application Development:</strong> Design and develop a user-friendly web application that caters to the specific needs of fleet management. Utilize Azure App Service to create a scalable and reliable platform for optimal performance.</li>
-                      <li><strong>Azure Identity Protection:</strong> Implement Azure Identity Protection to enhance the security posture of the Fleet Management Application. Utilize Azure's advanced identity management features to safeguard user access and data.</li>
-                      <li><strong>Data Management with Azure SQL Database:</strong> Integrate the application with Azure SQL Database for efficient data storage and retrieval. Leverage the capabilities of Azure SQL Database to ensure data integrity, scalability, and high availability.</li>
-                      <li><strong>Maintenance Scheduling:</strong> Develop a feature-rich module for maintenance scheduling, allowing users to plan and track maintenance activities for each vehicle in the fleet.</li>
-                      <li><strong>Vehicle Management:</strong> Implement comprehensive vehicle management features, including real-time tracking, status monitoring, and performance analysis. Provide a centralized dashboard for users to manage their entire fleet efficiently.</li>
-                    </ul>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <h4><strong>6. Fleet Management Application Development with Azure Integration</strong></h4>
-                    <ul>
-                      <h4><i class="bi bi-people ">Project Overview</h4></i>
-                      <li><strong>End-to-End Security Architecture:</strong> Design and implement a comprehensive security architecture for the Fleet Management Application. Employ industry best practices to safeguard data during transit and at rest, protecting against potential threats and vulnerabilities.</li>
-                      <li><strong>Encryption and Secure Communication:</strong> Utilize encryption protocols to secure communication between the web application and Azure SQL Database. Implement Transport Layer Security (TLS) to ensure data confidentiality and integrity during transit.</li>
-                      <li><strong>Role-Based Access Control (RBAC):</strong> Implement a robust RBAC system to manage user permissions effectively. Define roles based on job responsibilities and grant access only to authorized personnel, ensuring that sensitive information is accessible only to those who require it.</li>
-                      <li><strong>Multi-Factor Authentication (MFA):</strong> Strengthen user authentication by implementing MFA. Require users to verify their identity through multiple factors, such as passwords and authentication codes, adding an extra layer of security to the application.</li>
-                      <li><strong>Azure Active Directory Integration:</strong> Leverage Azure Active Directory (AAD) for user authentication and authorization. Integrate AAD seamlessly to centralize user identity management and enhance overall access control.</li>
-                    </ul>
-                </ul>
-              </div>
+          </div><!-- End Project 1 -->
+    
+          <!-- Project 2 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>2. Online Movie Watching Application</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>Application Architecture:</strong> Designed frontend, backend, and database components.</li>
+                <li><strong>Storage Configuration:</strong> Set up Azure Storage for media files.</li>
+                <li><strong>Deployment:</strong> Used Azure services for frontend and backend hosting.</li>
+                <li><strong>Security:</strong> Implemented Azure Active Directory for user access.</li>
+                <li><strong>Monitoring:</strong> Set up Azure Monitor and Log Analytics.</li>
+              </ul>
             </div>
+          </div><!-- End Project 2 -->
+    
+          <!-- Project 3 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>3. Vehicle Tracking System</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>IoT Hub Setup:</strong> Created an instance and registered devices.</li>
+                <li><strong>Device Configuration:</strong> Ensured secure connections for telemetry data.</li>
+                <li><strong>Data Routing:</strong> Forwarded data to Azure Stream Analytics.</li>
+                <li><strong>Monitoring:</strong> Implemented health checks and remote management.</li>
+              </ul>
+            </div>
+          </div><!-- End Project 3 -->
+    
+          <!-- Project 4 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>4. Fleet Data Analysis and Reporting</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>Stream Analytics:</strong> Set up to process real-time data.</li>
+                <li><strong>SQL Database:</strong> Created tables to store fleet data.</li>
+                <li><strong>Azure Functions:</strong> Developed for custom data processing.</li>
+                <li><strong>Reporting:</strong> Generated visualizations and dashboards.</li>
+              </ul>
+            </div>
+          </div><!-- End Project 4 -->
+    
+          <!-- Project 5 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>5. Fleet Management Application Development</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>Web Application:</strong> Designed a user-friendly fleet management app.</li>
+                <li><strong>Identity Protection:</strong> Enhanced security using Azure features.</li>
+                <li><strong>Data Management:</strong> Integrated with Azure SQL Database.</li>
+                <li><strong>Maintenance Scheduling:</strong> Developed tools for tracking vehicle maintenance.</li>
+                <li><strong>Vehicle Management:</strong> Implemented real-time tracking and analysis.</li>
+              </ul>
+            </div>
+          </div><!-- End Project 5 -->
+    
+          <!-- Project 6 -->
+          <div class="col-lg-6">
+            <div class="project-item">
+              <h4><strong>6. Security Architecture for Fleet Management</strong></h4>
+              <h5><i class="bi bi-people"></i> Project Overview</h5>
+              <ul>
+                <li><strong>Security Architecture:</strong> Designed to protect data effectively.</li>
+                <li><strong>Encryption:</strong> Used protocols for secure communications.</li>
+                <li><strong>Role-Based Access Control:</strong> Managed user permissions effectively.</li>
+                <li><strong>Multi-Factor Authentication:</strong> Enhanced login security.</li>
+                <li><strong>Azure Active Directory:</strong> Integrated for user management.</li>
+              </ul>
+            </div>
+          </div><!-- End Project 6 -->
+    
+        </div>
       </div>
-    </section><!-- End Skills Section -->
+    </section><!-- End Azure Projects Section -->
+    
+<!-- End Skills Section -->
 
     <!-- ======= Certificates Section ======= -->
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
     <section id="portfolio" class="portfolio">
       <div class="container">
-
+    
         <div class="section-title">
           <h2>Certifications</h2>
           <p>I have attained several industry-relevant certifications.</p>
           <h6><strong>Hover over any certificate and choose the link icon to view certificate details.</strong></h6>
-          
         </div>
-
+    
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
@@ -498,9 +508,8 @@
             </ul>
           </div>
         </div>
-
+    
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
           <div class="col-lg-6 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="Degree Certificate">
@@ -510,7 +519,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="Degree Certificate">
@@ -520,7 +529,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="R for Data Science Certificate">
@@ -530,7 +539,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="Azure Cloud Architect Certificate">
@@ -540,17 +549,17 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="C++ Certificate">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a->
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="Java Certificate">
@@ -560,7 +569,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="HUAWEI Training Certificate">
@@ -570,7 +579,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="SPECCON Holdings Certificate">
@@ -580,7 +589,7 @@
               </div>
             </div>
           </div>
-
+    
           <div class="col-lg-6 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-0.png" class="img-fluid" alt="ICDL Certificate">
@@ -590,8 +599,29 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section><!-- End Portfolio Section -->
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
