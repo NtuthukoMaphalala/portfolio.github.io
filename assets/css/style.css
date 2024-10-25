@@ -1197,4 +1197,14 @@ body, html {
     border-radius: 5px; /* Optional for rounded corners */
     text-align: center; /* Centers text inside the container */
 }
-
+.hidden-id {
+            display: none;
+            margin-left: 5px;
+            font-weight: bold;
+            color: green;
+        }
+        .id-placeholder {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
