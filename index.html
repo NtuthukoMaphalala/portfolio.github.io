@@ -103,7 +103,7 @@
 
       <h1>Ntuthuko Maphalala</h1>     
       <p><span class="typed" data-typed-items="Data and IT Development Intern"></span></p>
-      <p>(Eucalyptus Tree Improvement project)</p>
+      <p>Eucalyptus Tree Improvement project</p>
     </div>
   </section><!-- End Hero -->
 
@@ -115,9 +115,13 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <div class="theme-switch-container">
-            <button id="theme-switch-btn">Dark Mode</button>
-          </div>
+          
+          <div class="theme-switch-container text-center">
+            <button id="theme-switch-btn" type="button" class="btn btn-primary">
+              Dark Mode
+            </button>
+          </div>          
+
             <p>
               I am Ntuthuko Maphalala, based in Pietermaritzburg, with a Bachelor's degree in Computer Science and Information Technology from the University of KwaZulu-Natal, obtained in May 2023. Currently, I work as a Data and Information Development Intern at the Institute for Commercial Forestry Research (<a href="https://icfr.co.za/" target="_blank">ICFR</a>), specializing in the Eucalyptus Tree Improvement Project. With a strong foundation in computer science and a passion for innovation, I contribute to advancing forestry research and technology at the University of KwaZulu-Natal (<a href="https://ukzn.ac.za/" target="_blank">UKZN</a>).
             </p>
@@ -154,7 +158,7 @@
                     <i class="bi bi-chevron-right"></i> 
                     <strong>ID:</strong> 
                     <span class="id-placeholder" onclick="showPasswordModal()">Protected: Click Here</span>
-                    <span class="hidden-id" id="userId">9804265937082</span>
+                    <span class="hidden-id" id="userId">98042659367082</span>
                 </li>
                 </ul>
               </div>
@@ -232,19 +236,31 @@
     <section id="resume" class="resume">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-            <p>
-                As a graduate with a Bachelor's degree in Computer Science and Information Technology, I possess comprehensive knowledge in software development, web development, IT consulting, data capturing, data analysis, MS excel, MS word, MS Power Point, database administration, network administration, cybersecurity, as well as research and academia.
-            </p>
-        </div>
+            <div class="section-title">
+              <h2>Resume</h2>
+                <p>
+                    As a graduate with a Bachelor's degree in Computer Science and Information Technology, I possess comprehensive knowledge in software development, web development, IT consulting, data capturing, data analysis, MS excel, MS word, MS Power Point, database administration, network administration, cybersecurity, as well as research and academia.
+                </p>
+            </div>
             <p>Click the button below to download my resume:</p>
 
-            <div class="resume-downloader-container">
-                <button><a href="Ntuthuko_Maphalala_Resume.pdf" download="Ntuthuko_Maphalala_Resume.pdf" target="_blank">Download Resume (.PDF)</a></button>
+            <div class="resume-downloader-container text-center">
+              <button type="button" class="btn btn-primary">
+                <a href="Ntuthuko_Maphalala_Resume.pdf" download="Ntuthuko_Maphalala_Resume.pdf" target="_blank" 
+                   class="text-white text-decoration-none">
+                  Download Resume (.PDF)
+                </a>
+              </button>
             </div>
+            
 
-            <button><a href="mailto:ntuthukomaphalala4@gmail.com" class="hire-me" target="_blank">Hire Me</a></button>
+            
+            
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">
+                <a href="mailto:ntuthukomaphalala4@gmail.com" class="text-white text-decoration-none" target="_blank">Hire Me</a>
+              </button>
+            </div>
 
         <!--div class="row">
           <div class="col-lg-6" data-aos="fade-up"-->
@@ -668,9 +684,7 @@
           <h2>Contact</h2>
           <p>Connect with me directly. Feel free to reach out via email, inquiries, or any other queries you might have.</p>
         </div>
-
         <div class="row" data-aos="fade-in">
-
           <div class="col-lg-6 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
@@ -699,27 +713,40 @@
           </div>
 
           <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://formspree.io/f/mwpedwpp" method="POST">
+            <div class="info">
+            <form action="https://formspree.io/f/mwpedwpp" method="POST" novalidate>
+              <p>Your feedback will be highly appreciated. Thank you!</p>
               <div class="row">
                 <div class="form-group col-md-6">
-                  <input type="text" placeholder="First & Last Name" name="name" class="form-control" id="name" required>
+                  <label for="name" class="form-label"></label>
+                  <input type="text" name="name" id="name" class="form-control" 
+                         placeholder="First & Last Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" placeholder="Email Address" name="email" class="form-control" id="email" required>
+                  <label for="email" class="form-label"></label>
+                  <input type="email" name="email" id="email" class="form-control" 
+                         placeholder="Email Address" required>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Subject Line" name="subject" class="form-control" id="subject" required>
+                <label for="subject" class="form-label"></label>
+                <input type="text" name="subject" id="subject" class="form-control" 
+                       placeholder="Subject Line" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" placeholder="Type Your Query..." name="message" rows="5" required></textarea>
+                <label for="message" class="form-label"></label>
+                <textarea name="message" id="message" class="form-control" 
+                          placeholder="Type Your Query..." rows="5" required></textarea>
               </div>
               <div class="my-3">
-                <div class="error-message"></div>
+                <div class="error-message text-danger" role="alert" aria-live="polite"></div>
               </div>
-              <div class="text-center"><button type="submit">Submit</button></div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </form>
           </div>
+          
         </div>
       </div>
     </section><!-- End Contact Section -->
