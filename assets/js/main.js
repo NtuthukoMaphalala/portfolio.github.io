@@ -1,4 +1,4 @@
-add the js code here: const correctPassword = '6111'; // Set your password here
+const correctPassword = '6111'; // Set your password here
 
 function showPasswordModal() {
     document.getElementById('passwordModal').style.display = "block";
@@ -37,11 +37,6 @@ function showId() {
 
 (function () {
   "use strict";
-
-  /**
-   * Helper Functions
-   */
-
   // Easy selector helper function
   const select = (el, all = false) => {
     el = el.trim();
