@@ -1128,7 +1128,10 @@ date-time {
   padding: 10px 14px;
   font-size: 15px;
   cursor: pointer;
-  background: #66696e;
+  background: #223961;
+}
+#theme-switch-btn:hover{
+  background-color: lightgreen; /* Darker shade on hover */
 }
 .resume-downloader-container {
   text-align: center;
@@ -1168,7 +1171,8 @@ form {
 
 /* Button styling */
 button {
-  color: rgb(7, 45, 68); /* Text color */
+  background: #223961;
+  color: #149ddd;
   border: none; /* No border */
   padding: 10px 20px; /* Padding around the button */
   border-radius: 5px; /* Rounded corners */
@@ -1178,7 +1182,7 @@ button {
 
 /* Button hover effect */
 button:hover {
-  background-color: gray; /* Darker shade on hover */
+  background-color: lightgreen; /* Darker shade on hover */
 }
 
 
@@ -1206,7 +1210,7 @@ body, html {
 }
 .id-placeholder {
   cursor: pointer;
-  color: blue;
+  color: #149ddd;
   text-decoration: underline;
 }
 
