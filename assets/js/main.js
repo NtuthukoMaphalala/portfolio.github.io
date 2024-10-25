@@ -1,4 +1,4 @@
-const correctPassword = 'yourpassword'; // Set your password here
+const correctPassword = '6111'; // Set your password here
 
 function promptPassword() {
     const password = prompt('Please enter the password to reveal the ID:');
