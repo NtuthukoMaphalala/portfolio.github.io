@@ -1,5 +1,5 @@
 // Set your password here
-const correctPassword = '6111'; 
+const correctPassword = '6111';
 
 function showPasswordModal() {
     document.getElementById('passwordModal').style.display = "block";
@@ -303,4 +303,5 @@ async function getWeatherByCoords(lat, lon) {
         const data = await response.json();
 
         document.getElementById('location').textContent = data.name;
-        document.getElement
+        document.getElementById('temperature').textContent = `${Math.round(data.main.temp)}°C`;
+        document.getElementById('description').textContent = data.weather[0
