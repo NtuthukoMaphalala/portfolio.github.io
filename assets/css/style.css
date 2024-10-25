@@ -8,6 +8,18 @@ body {
   background-color: white;
 }
 
+.hidden-id {
+    display: none;
+    margin-left: 5px;
+    font-weight: bold;
+    color: green;
+}
+.id-placeholder {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
 a {
   color: #149ddd;
   text-decoration: none;
@@ -1196,16 +1208,4 @@ body, html {
     border: 1px solid #ccc; /* Optional for a light border */
     border-radius: 5px; /* Optional for rounded corners */
     text-align: center; /* Centers text inside the container */
-}
-
-.hidden-id {
-    display: none;
-    margin-left: 5px;
-    font-weight: bold;
-    color: green;
-}
-.id-placeholder {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
 }
