@@ -348,3 +348,4 @@ themeSwitchBtn.addEventListener("click", () => {
 
         getUserLocation();
     
+        
