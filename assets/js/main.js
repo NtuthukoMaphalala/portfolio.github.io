@@ -2,7 +2,6 @@ const correctPassword = '6111'; // Set your password here
 
 function showPasswordModal() {
     document.getElementById('passwordModal').style.display = "block";
-    document.getElementById('passwordInput').focus(); // Focus on the input when modal is shown
 }
 
 function closeModal() {
@@ -19,21 +18,11 @@ function checkPassword() {
     }
 }
 
-// Add an event listener for Enter key
-document.getElementById('passwordInput').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        checkPassword(); // Call the checkPassword function when Enter is pressed
-    }
-});
-
 function showId() {
     var userIdElement = document.getElementById('userId');
     userIdElement.style.display = "inline";
     userIdElement.previousSibling.style.display = "none"; // hide the placeholder
 }
-
-
-
 
 (function () {
   "use strict";
@@ -359,3 +348,4 @@ themeSwitchBtn.addEventListener("click", () => {
 
         getUserLocation();
     
+        
