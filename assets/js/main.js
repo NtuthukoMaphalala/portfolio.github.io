@@ -1,3 +1,19 @@
+const correctPassword = '9804'; // Set your password here
+
+function promptPassword() {
+    const password = prompt('Please enter the password to reveal the ID:');
+    if (password === correctPassword) {
+        showId();
+    } else {
+        alert('Incorrect password. Please try again.');
+    }
+}
+
+function showId() {
+    var userIdElement = document.getElementById('userId');
+    userIdElement.style.display = "inline";
+    userIdElement.previousSibling.style.display = "none"; // hide the placeholder
+}
 (function () {
   "use strict";
 
