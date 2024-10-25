@@ -1,19 +1,39 @@
 const correctPassword = '6111'; // Set your password here
 
-function promptPassword() {
-    const password = prompt('Please enter the password to reveal the ID:');
+function showPasswordModal() {
+    document.getElementById('passwordModal').style.display = "block";
+    document.getElementById('passwordInput').focus(); // Focus on the input when modal is shown
+}
+
+function closeModal() {
+    document.getElementById('passwordModal').style.display = "none";
+}
+
+function checkPassword() {
+    const password = document.getElementById('passwordInput').value;
     if (password === correctPassword) {
         showId();
+        closeModal();
     } else {
         alert('Incorrect password. Please try again.');
     }
 }
+
+// Add an event listener for Enter key
+document.getElementById('passwordInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        checkPassword(); // Call the checkPassword function when Enter is pressed
+    }
+});
 
 function showId() {
     var userIdElement = document.getElementById('userId');
     userIdElement.style.display = "inline";
     userIdElement.previousSibling.style.display = "none"; // hide the placeholder
 }
+
+
+
 
 (function () {
   "use strict";
