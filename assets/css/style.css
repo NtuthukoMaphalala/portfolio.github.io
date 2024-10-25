@@ -599,59 +599,43 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
+.portfolio-wrap {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+  position: relative;
+  overflow: hidden;
 }
 
-.services .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
+.portfolio-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the square without distorting */
 }
 
-.services .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
+/* Adjust the size of the squares */
+@media (min-width: 992px) {
+  .portfolio-item {
+    width: 150px; /* Adjust width for larger screens */
+    margin: 10px; /* Optional: Adjust margins */
+  }
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
+@media (max-width: 991px) {
+  .portfolio-item {
+    width: 120px; /* Adjust width for medium screens */
+    margin: 5px; /* Optional: Adjust margins */
+  }
 }
 
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #343a40;
-}
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
+@media (max-width: 767px) {
+  .portfolio-item {
+    width: 100px; /* Adjust width for small screens */
+    margin: 5px; /* Optional: Adjust margins */
+  }
 }
 
 /*--------------------------------------------------------------
@@ -994,23 +978,120 @@ body, html {
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 300px; /* Could be more or less, depending on screen size */
+  background-color: #fefefe; /* Light background for the modal */
+  margin: 10% auto; /* Adjusted margin for better vertical centering */
+  padding: 25px; /* Increased padding for a more spacious feel */
+  border: 2px solid #888; /* Slightly thicker border for emphasis */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  width: 90%; /* Adjusted width to be responsive */
+  max-width: 400px; /* Maximum width to maintain structure */
 }
 
 .close {
-  color: #aaa;
+  color: #aaa; /* Light gray color for close button */
   float: right;
-  font-size: 28px;
+  font-size: 30px; /* Increased font size for better visibility */
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #f00; /* Changed hover color to red for a more noticeable effect */
   text-decoration: none;
   cursor: pointer;
 }
+
+/* General Section Styles */
+.azure-projects {
+  padding: 60px 20px; /* Added horizontal padding for smaller screens */
+}
+
+/* Section Title Styles */
+.azure-projects .section-title {
+  text-align: center; /* Center align the title */
+  margin-bottom: 40px; /* Space below the title */
+}
+
+.azure-projects .section-title h2 {
+  font-size: 32px; /* Increased font size for better visibility */
+  font-weight: 700; /* Bold text */
+  text-transform: uppercase; /* Added uppercase transformation for emphasis */ 
+  /**/
+}
+
+.azure-projects .section-title p {
+  font-size: 18px; /* Slightly larger font size for the paragraph */
+}
+
+/* Project Item Styles */
+.project-item {
+  border-radius: 10px; /* Rounded corners */
+  padding: 25px; /* Increased padding inside project items */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Slightly more pronounced shadow */
+  margin-bottom: 30px; /* Space between project items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effect for hover */
+}
+
+.project-item:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Project Title Styles */
+.project-item h4 {
+  font-size: 22px; /* Larger font size for project titles */
+  margin-bottom: 15px; /* Space below the title */
+  color: #149ddd; /* Light blue color for titles */
+}
+
+/* Project Overview Styles */
+.project-item h5 {
+  font-size: 18px; /* Larger font size for project overview heading */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* List Styles */
+.project-item ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.project-item ul li {
+  margin-bottom: 20px; /* Space between list items */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.project-item ul li strong {
+  margin-right: 10px; /* Space after strong text */
+  color: #149ddd; /* Light blue color for titles */
+}
+
+.project-item ul li i {
+  font-size: 18px; /* Increased font size for icons */
+  margin-right: 5px; /* Space after icons */
+  color: #149ddd; /* Color for icons */
+  line-height: 0; /* Align icons vertically */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%; /* Full width on small screens */
+    padding: 15px; /* Reduced padding for small screens */
+  }
+
+  .project-item {
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .azure-projects .section-title h2 {
+    font-size: 26px; /* Smaller title on mobile */
+  }
+
+  .azure-projects .section-title p {
+    font-size: 14px; /* Smaller paragraph on mobile */
+  }
+}
+
