@@ -150,12 +150,25 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Immediately</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Institution:</strong> <span>University of KwaZulu-Natal (UKZN)</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Conferment Date and Time:</strong> <span>03 May 2023, 17h30</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> 
+                    <strong>ID:</strong> 
+                    <span class="id-placeholder" onclick="showPasswordModal()">Protected: Click Here</span>
+                    <span class="hidden-id" id="userId">98042659367082</span>
+                </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-
+        <div id="passwordModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <h2>Enter Password</h2>
+              <input type="password" id="passwordInput" placeholder="Enter password">
+              <button onclick="checkPassword()">Submit</button>
+          </div>
+      </div>
       </div>
     </section><!-- End About Section -->
 
