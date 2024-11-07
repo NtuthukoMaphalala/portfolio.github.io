@@ -1094,4 +1094,8 @@ body, html {
     font-size: 14px; /* Smaller paragraph on mobile */
   }
 }
-
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: gray;
+}
