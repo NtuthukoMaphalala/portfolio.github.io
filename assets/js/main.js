@@ -347,5 +347,58 @@ themeSwitchBtn.addEventListener("click", () => {
         }
 
         getUserLocation();
-    
+    // Function to set rating
+  let userRating = null;
+
+  function setRating(rating) {
+    userRating = rating;
+    const stars = document.querySelectorAll(".star");
+    stars.forEach((star, index) => {
+      if (index < rating) {
+        star.style.color = "gold";
+      } else {
+        star.style.color = "gray";
+      }
+    });
+
+    // Display emojis based on the rating
+    let emoji = '';
+    switch (rating) {
+      case 1:
+        emoji = '😞'; // Frown face
+        break;
+      case 2:
+        emoji = '😟'; // Little sad
+        break;
+      case 3:
+        emoji = '😐'; // Neutral face
+        break;
+      case 4:
+        emoji = '🙂'; // Little smile
+        break;
+      case 5:
+        emoji = '😁'; // Big smile
+        break;
+      default:
+        emoji = ''; // Default, in case something goes wrong
+    }
+
+    // Update the selected rating display with stars and the emoji
+    document.getElementById("selected-rating").innerHTML = `You rated: ${rating} stars ${emoji}`;
+  }
+
+  // Before form submission, check if rating is selected
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    if (userRating === null) {
+      event.preventDefault();
+      alert("Please provide a rating before submitting the form.");
+    } else {
+      // Append rating to form submission
+      const ratingInput = document.createElement("input");
+      ratingInput.type = "hidden";
+      ratingInput.name = "rating";
+      ratingInput.value = userRating;
+      this.appendChild(ratingInput);
+    }
+  });
         
