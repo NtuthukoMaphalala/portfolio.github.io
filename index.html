@@ -724,12 +724,25 @@
                 <textarea name="message" id="message" class="form-control" 
                           placeholder="Type Your Query..." rows="5" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="error-message text-danger" role="alert" aria-live="polite"></div>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
+              <!-- Rating system always visible -->
+                <div class="my-3">
+                  <label for="rating">Rate your experience:</label>
+                  <div id="rating">
+                    <span class="star" onclick="setRating(1)">&#9733;</span>
+                    <span class="star" onclick="setRating(2)">&#9733;</span>
+                    <span class="star" onclick="setRating(3)">&#9733;</span>
+                    <span class="star" onclick="setRating(4)">&#9733;</span>
+                    <span class="star" onclick="setRating(5)">&#9733;</span>
+                  </div>
+                  <div id="selected-rating" style="margin-top: 10px; color: red;"></div>
+                </div>
+          
+                <div class="my-3">
+                  <div class="error-message text-danger" role="alert" aria-live="polite"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
             </form>
           </div>
           
